@@ -44,13 +44,14 @@ void main() {
         if (chave == true) {
           print(
               "\nVocê se reaproxima da cômoda de pinho, seus engates de metal são frios ao toque, usando a chave enferrujada para abrir a gaveta "
+
                   "a resistência revela uma madeira há muito apodrecida. O cheiro de mofo invade seus pulmões "
                   "e em seu interior repousa um papel afetado pelo tempo, seus garranchos dizem:\n "
                   "╔══════════════════════════════════════════════════════════════════════════╗"
                   "\n    Minha cara, mando-lhe esta carta como um apelo.\n"
                   "\n    Nos ultimos dias ele apresenta um estado mais agitado que o habitual, "
                   "\n    não consego contê-lo, rogo por sua ajuda o mais rápido possível, "
-                  "\n    por favor, venha até aqui\n"
+                  "\n    por favor, venha até aqui, \n"
                   "\n               Atenciosamente, S.H.\n"
                   "\n                           Dezenove de março de mil novecentos e oito.\n"
                   "╚══════════════════════════════════════════════════════════════════════════╝\n\n");
@@ -58,6 +59,7 @@ void main() {
         } else {
           print(
               "\nVocê se aproxima da cômoda de pinho, há uma gaveta ali e está trancada, é impossível abri-la.");
+
         }
         break;
       case "C":
