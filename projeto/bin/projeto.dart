@@ -19,15 +19,15 @@ void main() {
   print(
       "Seu olhar perscruta a sala em busca de uma saída deste local aterrorizante"
           "e cai sobre uma janela, aparentemente trancada. Ao lado dela há uma pequena cômoda de pinho "
-          "adornada com engastes de metal e um vaso de vidro.");
+          "adornada com engastes de metal e um vaso de vidro, em sua metade inferior há uma coleção de livros gastos.");
   sleep(Duration(seconds: 1));
   print("\n...\n");
   sleep(Duration(seconds: 1));
   print(" O que deseja fazer a seguir?: ");
 
-  while (continuar != false) {
+  while (continuar == false) {
     print("\n=============================================\n"
-        "A. Checar a janela.\nB. Checar a cômoda.\nC. Checar o vaso de vidro.\nD. Continuar."
+        "A. Checar a janela.\nB. Checar a cômoda.\nC. Checar o vaso de vidro.\nD. Checar livros."
         "\n=============================================\n");
     action = stdin.readLineSync();
 
@@ -40,20 +40,20 @@ void main() {
       case "B":
         if (chave == true) {
           print(
-              "Você se aproxima da cômoda de pinho, seus engates de metal são frios ao toque, "
-                  "ao serem puxados revelam a resistência de uma madeira há muito apodrecida. O cheiro de mofo invade seus pulmões "
+              "Você se reaproxima da cômoda de pinho, seus engates de metal são frios ao toque, usando a chave enferrujada para abrir a gaveta "
+                  "a resistência revela uma madeira há muito apodrecida. O cheiro de mofo invade seus pulmões "
                   "e em seu interior repousa um papel afetado pelo tempo, seus garranchos dizem:\n "
                   "╔══════════════════════════════════════════════════════════════════════════╗"
                   "\n    Minha cara, mando-lhe esta carta como um apelo.\n"
                   "\n    Nos ultimos dias ele apresenta um estado mais agitado que o habitual, "
                   "\n    não consego contê-lo, rogo por sua ajuda o mais rápido possível, "
-                  "\n    por favor, venha até aqui\n"
+                  "\n    por favor, venha até aqui, \n"
                   "\n               Atenciosamente, S.H.\n"
                   "╚══════════════════════════════════════════════════════════════════════════╝\n\n");
+
         } else {
           print(
-              "Você se aproxima da cômoda de pinho, seus engates de metal são frios ao toque, "
-                  "ao serem puxados revelam a resistência de uma madeira há muito apodrecida. A gaveta está trancada, é impossível abri-la.");
+              "Você se aproxima da cômoda de pinho, há uma gaveta ali e está trancada, é impossível abri-la.");
         }
         break;
       case "C":
@@ -61,12 +61,14 @@ void main() {
             "Você se aproxima do vaso de vidro, seu corpo é repleto de ranhuras e algumas partes faltando. Em seu interior há uma chave misteriosa.");
         chave = true;
         break;
-      case "D":
-        continuar = true;
+      case "B":
+        print("Você se aproxima da coleção de livros, suas velhas lambadas em capa dura revelam os títulos desgastados e banhados a ouro.\n\n"
+            "The Vampyre - 1819\nGoetia - 1904\n");
         break;
     }
   }
-  print("");
+
+
 }
 
 funcMenu(bool inicio) {
