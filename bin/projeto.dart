@@ -3,10 +3,8 @@ import 'dart:io';
 void main() {
   double karma;
   var action;
-  bool chave = false,
-      continuar = false,
-      livroProsseguir = false;
-  String continuarScape="1938";
+  bool chave = false, continuar = false, livroProsseguir = false;
+  String continuarScape = "1938";
 
   print("\n•̀.̫•́✧ Seja bem-vinde ao Don't Tell Her!");
 
@@ -21,8 +19,8 @@ void main() {
   sleep(Duration(seconds: 1));
   print(
       "Seu olhar perscruta a sala em busca de uma saída deste local aterrorizante"
-          "e cai sobre uma janela, aparentemente trancada. Ao lado dela há uma pequena cômoda de pinho "
-          "adornada com engastes de metal e um vaso de vidro, em sua metade inferior há uma coleção de livros gastos.");
+      "e cai sobre uma janela, aparentemente trancada. Ao lado dela há uma pequena cômoda de pinho "
+      "adornada com engastes de metal e um vaso de vidro, em sua metade inferior há uma coleção de livros gastos.");
   sleep(Duration(seconds: 1));
   print("\n...\n");
   sleep(Duration(seconds: 1));
@@ -38,28 +36,26 @@ void main() {
       case "A":
         print(
             "\nVocê se aproxima da antiga janela de madeira. Seus vidros embaçados e sujos de poeira revelam "
-                "uma pequena estrada de terra batida que serpenteia entre grama e vegetação morta em direção a um pequeno bosque de árvores abandonadas pelo tempo.");
+            "uma pequena estrada de terra batida que serpenteia entre grama e vegetação morta em direção a um pequeno bosque de árvores abandonadas pelo tempo.");
         break;
       case "B":
         if (chave == true) {
           print(
               "\nVocê se reaproxima da cômoda de pinho, seus engates de metal são frios ao toque, usando a chave enferrujada para abrir a gaveta "
-
-                  "a resistência revela uma madeira há muito apodrecida. O cheiro de mofo invade seus pulmões "
-                  "e em seu interior repousa um papel afetado pelo tempo, seus garranchos dizem:\n "
-                  "╔══════════════════════════════════════════════════════════════════════════╗"
-                  "\n    Minha cara, mando-lhe esta carta como um apelo.\n"
-                  "\n    Nos ultimos dias ele apresenta um estado mais agitado que o habitual, "
-                  "\n    não consego contê-lo, rogo por sua ajuda o mais rápido possível, "
-                  "\n    por favor, venha até aqui, \n"
-                  "\n               Atenciosamente, S.H.\n"
-                  "\n                           Dezenove de março de mil novecentos e oito.\n"
-                  "╚══════════════════════════════════════════════════════════════════════════╝\n\n");
+              "a resistência revela uma madeira há muito apodrecida. O cheiro de mofo invade seus pulmões "
+              "e em seu interior repousa um papel afetado pelo tempo, seus garranchos dizem:\n "
+              "╔══════════════════════════════════════════════════════════════════════════╗"
+              "\n    Minha cara, mando-lhe esta carta como um apelo.\n"
+              "\n    Nos ultimos dias ele apresenta um estado mais agitado que o habitual, "
+              "\n    não consego contê-lo, rogo por sua ajuda o mais rápido possível, "
+              "\n    por favor, venha até aqui, \n"
+              "\n               Atenciosamente, S.H.\n"
+              "\n                           Dezenove de março de mil novecentos e oito.\n"
+              "╚══════════════════════════════════════════════════════════════════════════╝\n\n");
           livroProsseguir = true;
         } else {
           print(
               "\nVocê se aproxima da cômoda de pinho, há uma gaveta ali e está trancada, é impossível abri-la.");
-
         }
         break;
       case "C":
@@ -70,12 +66,13 @@ void main() {
       case "D":
         print(
             "\nVocê se aproxima da coleção de livros, suas velhas lambadas em capa dura revelam os títulos desgastados e banhados a ouro.\n\n"
-                "The Vampyre - 1819\nGoetia - 1904\nThe Hobbit - 1937\nFrankenstein - 1818\n\n");
-        if (livroProsseguir==true) {
-          print("Por algum motivo você prende sua atenção nas datas da coleção de livros. ");
+            "The Vampyre - 1819\nGoetia - 1904\nThe Hobbit - 1937\nFrankenstein - 1818\n\n");
+        if (livroProsseguir == true) {
+          print(
+              "Por algum motivo você prende sua atenção nas datas da coleção de livros. ");
 
           funcCodeScape(continuarScape);
-        }else{
+        } else {
           print("");
         }
         break;
@@ -129,14 +126,14 @@ funcMenu(bool inicio) {
   }
 }
 
-funcCodeScape(String scape){
+funcCodeScape(String scape) {
   print("Informe a ordem numérica a qual deseja ordenar os livros.\n");
   String? scape = stdin.readLineSync()!;
   //scape = int.parse as String;
 
-  if(scape == "1938"){
+  if (scape == "1938") {
     print("usuario escapou");
-  }else{
+  } else {
     print("usuario errou o codigo");
   }
 }
