@@ -1,5 +1,5 @@
-# Dont_Tell_Her
+# Don't tell her
 
-> Jogo de texto feito na lang Dart com o intuito de aprender a lang.
+Jogo de texto feito em Dart com o objetivo principal treinar e aprender a lang.
 
-    Em andamento
+:fa-gavel: em adamento.
