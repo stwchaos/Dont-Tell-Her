@@ -132,8 +132,23 @@ funcCodeScape(String scape) {
   //scape = int.parse as String;
 
   if (scape == "1938") {
-    print("usuario escapou");
+    print(
+        "\n\nAo posicionar o último livro você ouve um estalo vindo da cômoda, como se algo houvesse se soltado.");
+    sleep(Duration(seconds: 2));
+    print(
+        "\nVocê encosta suas mãos sobre a cômoda fria e com um leve esforço consegue empurrá-la, revelando uma passagem.\n\n");
+    sleep(Duration(seconds: 1));
+    print("...");
+    sleep(Duration(seconds: 2));
+    print(
+        "\n\nAbaixo do móvel é possível ver um buraco na terra que se estende em um túnel, cavado irregularmente com débeis colunas de sustentação.");
+    sleep(Duration(seconds: 1));
+    print(
+        "Você comprime o seu corpo por entre a passagem enlameada, com raízes e pontas de cascalho se agarrando à sua roupa e rasgando a sua pele. Os poucos segundos que você passa neste local são escruciantes, mas por fim a débil luz da lua ilumina a sua saída.\n\n"
+        "Ao olhar aos arredores, você percebe que está em uma clareira rodeada por velhas árvores onde também se encontra a velha cabana que vinha a ser sua estada. Ao longe, luzes bruxuleantes chamam sua atenção e seu corpo é compelido a ir de encontro à elas."
+        "");
   } else {
-    print("usuario errou o codigo");
+    print(
+        "\nEssa sequência numérica parece não fazer muito sentido para você.");
   }
 }
